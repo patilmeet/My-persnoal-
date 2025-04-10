@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meetyaaa's Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: none;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .section p {
+      margin: 5px 0;
+      color: #666;
+    }
+    #passwordPrompt {
+      text-align: center;
+      margin-top: 100px;
+    }
+    input[type="password"] {
+      padding: 8px;
+      font-size: 16px;
+      width: 200px;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="passwordPrompt">
+    <h2>Enter Password</h2>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="error" style="color:red;"></p>
+  </div>  <div class="container" id="mainContent">
+    <h1>Meetyaaa's Info</h1><div class="section">
+  <h2>About Me</h2>
+  <p>Name: Meetyaaa</p>
+  <p>Board: SSC, Maharashtra</p>
+  <p>Grade: 10th</p>
+</div>
+
+<div class="section">
+  <h2>Relationship</h2>
+  <p>Girlfriend: Janhavi (aka Janyaaa)</p>
+  <p>First Patch-up: 7th July (10th Grade)</p>
+  <p>First Hug: 8th July</p>
+  <p>First Kiss: 18th July</p>
+  <p>Lucky Number: 7</p>
+</div>
+
+<div class="section">
+  <h2>Favorites</h2>
+  <p>Her Favorite Color: Red</p>
+  <p>Her Favorite Ice Cream: Vanilla</p>
+  <p>Her Favorite Song: Teri Aankhon Mein</p>
+  <p>Food: Chicken Biryani</p>
+</div>
+
+<div class="section">
+  <h2>Special Moments</h2>
+  <p>First Diwali Together: 2024</p>
+  <p>First Gudi Padwa Together: 2025</p>
+  <p>7-Month Anniversary: Completed</p>
+</div>
+
+  </div>  <script>
+    function checkPassword() {
+      const password = document.getElementById('passwordInput').value;
+      if (password === 'Janhavi07') {
+        document.getElementById('passwordPrompt').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block';
+      } else {
+        document.getElementById('error').textContent = 'Incorrect password. Try again.';
+      }
+    }
+  </script></body>
+</html>
